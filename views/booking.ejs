@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header-->
+    <header>
+		<div class="header-class">
+		    <div class="logo-align">
+          <div class="h1"><h1 class="top-h1">Hospital Management</h1></div>
+		      <img src="img/hospital-logo.png" class="logo-img">
+        </div>
+		    <ul id="navlist">
+   			    <li><a href="/">Home</a></li>
+			    <li><a href="/about">About</a></li>
+			    <li><a href="/gallery">Gallery</a></li>
+			    <li style="border-style: none;"><a href="#">Contact us</a></li>
+			</ul>
+	    </div>
+	</header>
+	<div class="white-space"></div>
+    <!--/Header-->
+
+<!--Main site-->
+<main>
+    <!--Orthopaedic-->
+    <%- include('include/_orthopaedic')%>
+    <!--/Orthopaedic-->
+    
+    <!--Cardialogy-->
+    <%- include('include/_cardialogy')%>
+    <!--/Cardialogy-->
+    
+    <!--Gastroenterlogy-->
+    <%- include('include/_gastroenterlogy')%>
+    <!--/Gastroenterlogy-->
+
+    <!--Urology-->
+    <%- include('include/_urology')%>
+    <!--/Urology-->
+
+    <!--Oncology/Cancer-->
+    <%- include('include/_oncology-cancer')%>
+    <!--/Oncology/Cancer-->
+    
+    <!--Neurology-->
+    <%- include('include/_neurology')%>
+    <!--/Neurology-->
+    
+</main> 
+
+<!--/Main site-->
+<div style="margin-bottom: 40px;"></div>
+<!--Footer-->
+    <%- include('include/_footer')%>
+<!--/Footer-->

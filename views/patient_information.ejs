@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header-->
+    <header>
+		<div class="header-class">
+		    <div class="logo-align">
+          <div class="h1"><h1 class="top-h1">Hospital Management</h1></div>
+		      <img src="img/hospital-logo.png" class="logo-img">
+        </div>
+		    <ul id="navlist">
+   			    <li><a href="/">Home</a></li>
+			    <li><a href="/about">About</a></li>
+			    <li><a href="/gallery">Gallery</a></li>
+			    <li style="border-style: none;"><a href="#">Contact us</a></li>
+			</ul>
+	    </div>
+	</header>
+	<div class="white-space"></div>
+    <!--/Header-->
+
+<!--Main site-->
+<main>
+    <div class="box-nav d-flex-justify-between">
+        <div class="filter" style="margin: 20px 30px;">
+            <a href="/info"><i class="fas fa-angle-double-left"></i>Back</a>
+        </div>
+    <div class="up-div top" style="margin-left: 500px;">Welcome</div>
+    
+    </div>
+    <div class="main-dd">
+        <div class="patient_info-lt"><a href="/add_user"><b>Patient Register</b></a></div>
+        <div class="patient_info-rt"><a href="/index"><b>Patient Record</b></a></div>
+    </div>
+    <div class="up-div"></div>
+    
+</main> 
+
+<!--/Main site-->
+
+<!--Footer-->
+    <%- include('include/_footer')%>
+<!--/Footer-->

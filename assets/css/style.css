@@ -1,0 +1,590 @@
+header{
+	 width: 100%;
+	 top: 0;
+	 left: 0;
+	 position: fixed;
+	 z-index: 1;
+}
+
+.header-class{
+	height:150px;
+	width:100%; 
+	background:linear-gradient(180deg,rgb(150, 137, 141),rgb(77, 70, 72),rgb(43, 41, 42)); 
+	border-radius: 0 0 10px 10px;
+}
+
+.header-class ul { 
+	text-align:right;  
+	padding:100px 40px 0 0; 
+	margin:0; list-style:none; 
+	border:0; float:right;
+}
+
+.header-class ul li { 
+	float:left; margin:0; 
+	padding:0 10px ; border:0;
+	border-right: 1px solid white;
+}
+
+.header-class ul li a { 
+	float:left; margin:0; 
+	padding:5px 5px; 
+	color:#8f999e; 
+	font:normal 16px Arial, Helvetica, sans-serif; 
+	text-decoration:none;
+}
+
+.header-class ul li a:hover { 
+	color:#fff; 
+	border-bottom:3px solid #e8ad09;
+}
+
+.logo-img{
+	width: 100px;
+	height: 100px;
+	border-radius: 5px;
+	float:left;
+	margin-bottom: 30px;
+}
+
+/**** .header-class ul last li ******/
+.login-btn{
+	border-radius: 20px;
+	background: blue;
+	width: 120px;
+	height:35px;
+	cursor: pointer;
+	text-align: center;
+	font-family: 'Barlow',sans-serif;
+	font-weight:bold;
+	
+}
+
+.login-btn .lg-a{
+
+	padding:10px 0 0 26px;
+	color: #000;
+}
+
+.login-btn .lg-a:hover{
+	border-bottom: none;
+}
+
+
+.login-btn:hover{
+	background:#16db93 ;
+}
+
+
+.logo-align{
+	width: 470px;
+	height: 100px;
+	float: left;
+}
+
+
+.h1{
+	padding-top:18px;
+	margin-top:20px ;
+}
+
+.top-h1{
+	background-color: orange;
+	color: white;
+	padding: 20px;
+	border-style: ridge;
+	border-radius: 5px;
+	float: right;
+}
+/******************BODY PART******************/
+
+.white-space{
+	width: 100%;
+	height: 150px;
+	background-color: black;
+	border-radius: 5px;
+}
+
+/*********** FRONT Image******************/
+.home-frame{
+	margin-top: 2px;
+	position: relative;
+	width: 100%;
+	height: 600px;
+	background-color:rgb(0, 0, 0);
+}
+
+.home-frame img{
+	opacity:0.5;
+	width: 100%;
+	height: 600px;
+	position: absolute;
+}
+
+.home-frame .rel-img{
+float: left;
+width: 100%;
+
+}
+
+.home-frame .rel-img h1{
+font-size: 90px;
+color: azure;
+margin: 100px 0 0 400px;
+}
+
+.home-frame .rel-img p{
+color:beige;
+margin: 100px 0 0 10px;
+width: 100%;
+font-family:serif;
+font-size: 28px;
+font-weight:bold;
+padding-left:10px;
+}
+
+/*****************CONTENT********************/
+body{
+	left: 0;
+	right: 0;
+}
+
+.all-content-left{
+	display: block;
+	left: 0;
+
+}
+
+.left-content{
+	margin-left: 100px;
+}
+
+.all-content-right{
+	display: block;
+	padding-left: 240px;
+}
+
+.left-img{
+	width: 500px;
+	height: 300px;
+	float: left;
+	padding: 0 70px 0 0;
+
+}
+ 
+.right-img{
+	float: right;
+	padding-right: 0;
+}
+
+
+.content-pg{
+	width: 500px;
+	height: auto;
+	display: inline-block;
+	padding: 50px 50px 50px 70px;
+	background-color: #e0ebeb;
+	border-radius: 15px 50px;
+}
+
+.img-view{
+	height: 280px;
+	padding:0;
+	width: 500px;
+	display: inline-block;
+	border-radius: 15px 50px 30px;
+}
+
+.white-line{
+	height: 120px;
+	width: 100px;
+}
+
+
+
+
+
+/************** FOOTER PART************************/
+.footer-top{
+	height: 50px;
+	width: 100%;
+}
+
+
+footer{
+	background:linear-gradient(180deg,rgb(150, 137, 141),rgb(77, 70, 72),rgb(43, 41, 42));
+	color: white;
+	border-radius: 10px 10px 0 0;
+	width: 100%;
+	 height: 270px;
+
+}
+
+footer div{
+	float: right;
+}
+
+footer div h5{
+	font-size: 20px;
+	padding-right: 135px;
+}
+
+footer div ul{
+	padding-right: 30px;
+	margin: 0;
+	padding-left: 15px;
+}
+
+footer div ul li{
+	white-space:nowrap;
+	font:normal 14px Arial, Helvetica, sans-serif; 
+}
+
+.bottom-line{
+	border-bottom:1px solid white;
+	width:100%;
+	padding-top: 5px;
+	padding-left: 30px;
+
+}
+
+.footer-content{
+	width: 100%;
+	text-align: center;
+	padding-top: 15px;
+	padding-right: 20px; 
+	font:normal 10px sans-serif;
+
+}
+
+
+/******* GALLAREY PAGE**********/
+.gd-div{
+	display: block;
+}
+
+.gal-div{
+	width: 100%;
+	height: auto;
+}
+
+.ig_d{
+	display: contents;
+}
+
+
+.ig_d img{
+	width: 250px;
+	height: 200px;
+	border-radius: 10px;
+}
+
+.gal-h1{
+	padding: 30px 0 10px 0;
+}
+
+
+/*********** Login Page**************/
+
+.lg-ag{
+	width: 100%;
+	height: 600px;
+	background-image: url("/img/lg_background.webp");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.new-login{
+	margin-left: 240px;
+	width: 100px;
+	height:20px;
+	float: left;
+	font-size: 20px;
+}
+
+.new-login:hover{
+	background-color: #000;
+}
+
+.new-login a{
+	color: #000;
+}
+
+.new-login a:hover{
+	color:orange;
+
+}
+
+.lg-form{
+	width:50%;
+	height: auto;
+	background-color:transparent;
+	border-radius: 20px;
+	margin-left: 420px;
+}
+
+		input[type=text], [type=password]{
+			width: 50%;
+			padding: 12px 10px;
+			border-radius: 10px;
+			margin: 8px 0; 
+			display:block;
+			border: 1px solid #ccc;
+			box-sizing: border-box;
+		}
+
+		button{
+			background-color: #04AA60;
+			color: white;
+			padding: 10px 10px;
+			margin: 8px 0;
+			cursor: pointer;
+			width: 200px;
+			border: 1px solid;
+
+		}
+		button:hover{
+			color:#fff;
+			background-color: #000;
+			border-radius: 20px;
+		}
+		.al-sub{
+			margin-right: 200px;
+			width: 100%;
+			height: 40px;
+			float: left;
+		}
+
+		.image{
+			text-align: center;
+			margin:0;
+		}
+
+		.img-logo{
+			width: 20%;
+			border-radius: 50%;
+			margin-right: 350px;
+		}
+
+		.container{
+			padding: 16px;
+		}
+
+
+
+/************************************************************************/
+/*********************Information Page**************************************/
+.up-div{
+	height: 100px;
+	width: 100%;
+}
+
+.top{
+	font-size: 80px;
+	font-weight: bolder;
+	color: rgb(51, 56, 56);
+	
+}
+
+.main-dd{
+	width: 100%;height: 380px;display: flex;
+	padding-top: 15px;
+}
+
+.main-dd a{
+	font-family:'Times New Roman', Times, serif;
+	border-radius: 10px;
+}
+
+.main-dd a:hover{
+	color:orangered;
+	background-color: #000;
+}
+
+.info-lt{
+	height: 350px;
+	width: 450px;
+	background-image: url(../img/patient.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 150px 0 0 50px;
+	font-size: 50px;
+}
+
+.info-cn{
+	height: 350px;
+	width: 450px;
+	background-image: url(../img/staff.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 150px 0 0 130px;
+	font-size: 50px;
+}
+
+.info-rt{
+	height: 350px;
+	width: 450px;
+	background-image: url(../img/doctor.webp);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 150px 0 0 80px;
+	font-size: 50px;	
+}
+
+
+/****************************************************************************************/
+/****************************Patient Information Page**********************************************/
+.patient_info-lt{
+	height: 450px;
+	width: 550px;
+	background-image: url('../img/patient_entry.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 200px 0 0 100px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+.patient_info-rt{
+	height: 450px;
+	width: 550px;
+	background-image: url('../img/patient_details.webp');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 200px 0 0 120px;
+	font-size: 50px;
+	margin-left: 150px;
+}
+
+
+/***********************************************************************************************/
+/****************************Staff Information Page******************************************/
+.staff_info-lt{
+	height: 450px;
+	width: 550px;
+	background-image: url('../img/staff_entry.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 200px 0 0 120px;
+	font-size: 50px;
+	margin-left: 50px;
+}
+
+.staff_info-rt{
+	height: 450px;
+	width: 550px;
+	background-image: url('../img/staff_details.jpg');
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	border-radius: 50%;
+	padding: 200px 0 0 140px;
+	font-size: 50px;
+	margin-left: 150px;
+}
+
+
+
+
+/***********************************************************************************************/
+/**************************Booking Appointment Page******************************************/
+.hed_del{
+	height: 30px;
+	width: 100%;
+	font-size: 40px;
+	margin-left: 20px;
+	padding-top: 30px;
+	color: rgb(243, 184, 21)
+}
+
+
+.doc-del-info{
+	height: 350px;
+	width:100%;
+	background-color: #ccc;
+	border-radius: 20px;
+}
+
+.doc_inf{
+	height: 300px;
+	width: 45%;
+	display: flex;
+}
+
+.doc_left{
+	float: left;
+	margin: 25px 0 0 10px;
+}
+
+.doc_right{
+	float: right;
+	margin: 25px 30px 0 0;
+	width: 48%;
+	padding-left: 10px;
+	height: 324px;
+	background-color: #8f8888;
+	border-radius: 10px 10px  0 0;
+}
+
+.doc_pho{
+   height: 250px;
+   width: 220px;
+   margin: 25px 0 0 0;
+}
+
+.doc_pho img{
+	width: 200px;
+	height: 250px;
+	border-radius: 10px;
+}
+.doc_cto{
+   height: 250px;
+   width: 330px;
+   margin: 25px 0 0 0;
+   padding-top: 10px;
+   border-radius: 0 10px 10px 0;
+}
+
+.doc_cto div{
+	height: 30px;
+	width:350px;
+	margin-top: 5px;
+	padding: 5px 0;
+}
+
+.doc_cto .del-lab-doc{
+	margin-right: 5px;
+	font-size: 20px;
+	font-weight: bold;
+}
+
+.doc_app_fx{
+	width: 100px;
+	height: 30px;
+	float: right;
+	border-radius: 5px;
+	background-color:aqua;
+	color: rgb(68, 74, 80);
+	font-weight: bold;
+	margin-top:10px ;
+	cursor: pointer;
+}
+
+.doc_app_fx:hover{
+	background-color: #000;
+	color: #e0ebeb;
+	border-color: #e8ad09;
+}

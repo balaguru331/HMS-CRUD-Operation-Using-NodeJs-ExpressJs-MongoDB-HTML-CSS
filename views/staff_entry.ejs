@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header-->
+    <header>
+		<div class="header-class">
+		    <div class="logo-align">
+          <div class="h1"><h1 class="top-h1">Hospital Management</h1></div>
+		      <img src="img/hospital-logo.png" class="logo-img">
+        </div>
+		    <ul id="navlist">
+   			    <li><a href="/">Home</a></li>
+			    <li><a href="/about">About</a></li>
+			    <li><a href="/gallery">Gallery</a></li>
+			    <li style="border-style: none;"><a href="#">Contact us</a></li>
+			</ul>
+	    </div>
+	</header>
+	<div class="white-space"></div>
+    <!--/Header-->
+    
+    <!--Main site-->
+    <div class="box-nav d-flex-justify-between">
+        <div class="filter" style="margin: 20px 30px;">
+            <a href="/staff_info"><i class="fas fa-angle-double-left"></i>Back</a>
+        </div>
+    </div>
+
+    <div class="form-title" style="background-color: rgb(152, 245, 115);border-radius: 20px;padding-top: 20px;">
+        <h2 class="text-dark">Staff Entry Form</h2>
+    </div> 
+    <form action="/api/users/staff" method="post" style="margin-left:40px;width: 60%;" id="staffs_entry" ></form>
+    <div style="background-image: url(/img/staffs.webp) ;background-repeat: no-repeat;background-size: cover;background-position: center;padding: 8px 0;border-radius: 10px;"> 
+            <!--Form handling-->
+                 
+                <form action="/api/staff" method="POST" style="margin-left:40px;width: 60%;" id="staff_entry"  >
+                    <div class="staff_entry" id="staff_entry">
+                        <div class="form-group">
+                            <label for="staffname" class="text-light">Staff Name</label>
+                            <input type="hidden" name="id" value="">
+                            <input type="text" name="staff_name" value="" placeholder="@name">
+                        </div>
+                        <div class="form-group">
+                            <label for="staff_code" class="text-light">Staff Code</label>
+                            <input type="text" name="staff_code" value="" placeholder="@staff code">
+                        </div>
+                        <label for="department" class="text-light">Department</label>
+                        <div class="form-group">
+                            <select name="department" id="" style="width:50%;height: 40px;border-radius: 10px;border-style: none;font-family: 'Barlow',sans-serif;">
+                                <option value="">Select option</option>
+                                <option value="Nephrology"> Nephrology</option>
+                                <option value="Cardiology">Cardiology</option>
+                                <option value="Gastroenterology">Gastroenterology</option>
+                                <option value="Cancer/Oncology">Cancer/Oncology</option>
+                                <option value="Neurology & Neurosurgery">Neurology & Neurosurgery</option>
+                                <option value="Gynecology">Gynecology</option>
+                                <option value="Emergency Care">Emergency Care</option>
+                                <option value="Orthopaedics ">Orthopaedics</option>
+                                </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="expriences" class="text-light">Expriences</label>
+                            <input type="text" name="expriences" value="" placeholder="@expriences">
+                        </div>
+
+                        <label for="qualification" class="text-light">Qualification</label>
+                        <div class="form-group">
+                            <select name="qualification" id="" style="width:50%;height: 40px;border-radius: 10px;border-style: none;font-family: 'Barlow',sans-serif;">
+                                <option value="">Select option</option>
+                                <option value="MBBS">MBBS</option>
+                                <option value="BDS">BDS</option>
+                                <option value="BAMS">BAMS</option>
+                                <option value="DNB">DNB</option>
+                                <option value="MS">MS</option>
+                                <option value="MD">MD</option>
+                                <option value="MCh">MCh</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone_no" class="text-light">Phone No</label>
+                            <input type="text" name="phone_no" value="" placeholder="xxxxxxxxxx" maxlength="10">
+                        </div>
+                        <div class="form-group">
+                            <button type="submit" class="btn text-dark update">Register</button>
+                        </div>
+                    </div>
+                    
+                </form>                                             
+            </div>  
+       
+    <!--/Main site-->
+
+    <!--Footer-->
+    <%- include('include/_footer')%>
+<!--/Footer-->

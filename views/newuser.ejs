@@ -1,0 +1,32 @@
+<!-- include header -->
+<%- include('include/_header')%>
+<!--/include header-->
+
+<!--Main site-->
+    
+    <div class="lg-ag">
+    <div>
+        <h2 style="font-size:60px;margin-left: 50px;color: rgb(23, 6, 56);padding-top:20px ;">New Login</h2>
+    </div>
+    <form  action="/api/loginuser" method="POST" id="new_user" class="lg-form">
+    <div class="image">	
+        <img src="img\logo.png" alt="avatar" class="img-logo" />
+    </div>
+        <label for="emailid"><b>Email Id</b></label>
+        <input type="text" name="emailid" placeholder="Enter your Name" required />
+
+        <label for="pwd"><b>Enter your Password</b></label>
+        <input type="text" name="newpwd" placeholder="Enter your Password" required />
+
+        <label for="pwd"><b>Re-enter your Password</b></label>
+        <input type="text" name="confirmpwd" placeholder="Re-enter your  Password" required />
+
+        <button type="submit">Register Now</button>
+</form>
+</div>
+
+<!--/Main site-->
+
+<!--Footer-->
+    <%- include('include/_footer')%>
+<!--/Footer-->

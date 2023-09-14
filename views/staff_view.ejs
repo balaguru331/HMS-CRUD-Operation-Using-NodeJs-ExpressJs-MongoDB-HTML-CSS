@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Patient Details</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <!-- Header-->
+    <header>
+		<div class="header-class">
+		    <div class="logo-align">
+          <div class="h1"><h1 class="top-h1">Hospital Management</h1></div>
+		      <img src="img/hospital-logo.png" class="logo-img">
+        </div>
+		    <ul id="navlist">
+   			    <li><a href="/">Home</a></li>
+			    <li><a href="/about">About</a></li>
+			    <li><a href="/gallery">Gallery</a></li>
+			    <li style="border-style: none;"><a href="#">Contact us</a></li>
+			</ul>
+	    </div>
+	</header>
+	<div class="white-space"></div>
+    <!--/Header-->
+
+<!--Main site-->
+<main id="site-main">
+    <div class="container">
+        <div class="box-nav d-flex-justify-between">
+            <a href="/staff_entry" class="border-shodow">
+                <span class="text-gradient">New Entry<i class="fa-solid fa-user"></i></span>
+            </a>
+        </div>
+
+        <!--Form handling-->
+        <form action="/staff_view" method="POST">
+            <table class="tabel">
+                <thead class="thead-dark">
+                    <tr>
+                        <th>No</th>
+                        <th>Staff Name</th>
+                        <th>Staff-Code</th>
+                        <th>Department</th>
+                        <th>Expriences</th>
+                        <th>Qualification</th>
+                        <th>Phone No</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <% for(var i=0;i<staff.length;i++){%>
+                        <td><%= i+1%></td>
+                        <td><%= staff[i].staff_name %></td>
+                        <td><%= staff[i].staff_code %></td>
+                        <td><%= staff[i].department %></td>
+                        <td><%= staff[i].expriences %></td>
+                        <td><%= staff[i].qualification %></td>
+                        <td><%= staff[i].phone_no %></td>
+                        <td>
+                            <a href="/staff_update?id=<%= staff[i]._id%>" class="btn border-shadow update">
+                                <span class="text-gradient"><i class="fas fa-pencil-alt"></i></span>
+                            </a>
+                            <a class="btn border-shadow deletestaff" staff-id=<%= staff[i]._id%>>
+                                <span class="text-gradient"><i class="fas fa-times"></i></span>
+                            </a>
+                        </td>
+                    </tr>
+                    <% } %>
+                </tbody>
+            </table>
+        </form>  
+    </div>
+</main>
+
+<!--/Main site-->
+
+<!--Footer-->
+    <%- include('include/_footer')%>
+<!--/Footer-->

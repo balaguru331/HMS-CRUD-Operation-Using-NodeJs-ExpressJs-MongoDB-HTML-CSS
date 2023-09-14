@@ -1,0 +1,56 @@
+<div class="hed_del"><u><b>Cardialogy</b></u></div>
+    <div class="doc-del-info">
+        <div class="doc_inf doc_left">
+            <div class="doc_pho"><img src="img/doc1.jpg" alt=""></div>
+            <div class="doc_cto">
+                <div><label class="del-lab-doc">Name <span>:</span></label><label>Dr Mayan</label></div>
+                <div><label class="del-lab-doc">Age <span>:</span></label><label>29</label></div>
+                <div><label class="del-lab-doc">Specialist<span>:</span></label><label>Consultant Cardialogy </label></div>
+                <div><label class="del-lab-doc">Department <span>:</span></label><label>Cardialogy</label></div>
+                <div><label class="del-lab-doc">Exprience <span>:</span></label><label>5years</label></div>
+                <div><label class="del-lab-doc">Cell<span>:</span></label><label>7867098710</label></div>
+            </div>
+        </div>
+        <div class="doc_inf doc_right">
+            <form action="/api/booking" method="POST" id="car-book">
+                <div style="padding:5px 0 ;display: flex;font-size: 30px;">
+                    <b>Doctor fee : 1000</b>
+                </div>
+
+                <div style="padding:2px 0 ;display: flex;">
+                    <label for="name" style="margin-top: 12px;"><b>Name:</b></label>
+                    <input type="text" name="name" style="width:180px;height: 30px;margin-left:5px ; " placeholder="@Name" required>
+                </div>
+                <div style="padding:2px 0 ;display: flex;">
+                    <label for="cell" style="margin-top: 12px;"><b>Cell:</b></label>
+                    <input type="text" name="cell" style="width:180px;height: 30px;margin-left:18px ;" maxlength="10" placeholder="@Mobile number" required>
+                </div>
+
+                <div style="padding:8px 0 ;display: flex;">
+                    <label for="dep" style="margin-top: 10px;"><b>Dep:</b></label>
+                    <select name="dep" id="" style="width: 180px;border-radius: 10px;height: 30px;margin-left: 19px;" >
+                        <option value="Cardialogy">Cardialogy</option>
+                    </select>
+                </div>
+                
+                <div style="padding:5px 0 ;display: flex;">
+                    <label for="date" style="margin-top: 10px;"><b>Date:</b></label>
+                    <input type="date" name="date" style="width:180px;height: 30px;margin-left:12px;border-radius: 8px;" >
+                </div>
+                <div style="padding:8px 0 ;display: flex;">
+                    <label for="time" style="margin-top: 10px;"><b>Time:</b></label>
+                    <select name="time" id="" style="width: 180px;border-radius: 10px;height: 30px;margin-left: 10px;">
+                        <option value="">Select your time:</option>
+                        <option value="10.00AM-11.00AM">10.00AM-11.00AM</option>
+                        <option value="12.00PM-1.00PM">12.00PM-1.00PM</option>
+                        <option value="3.00PM-4.00PM">3.00PM-4.00PM</option>
+                        <option value="5.00PM-6.00PM">5.00PM-6.00PM</option>
+                    </select>
+                </div>
+                    <input type="submit" value="BOOK" class="doc_app_fx">
+            </form>
+            <div style="font-size: 50px;font-weight: bold;font-family: Arial, Helvetica, sans-serif;margin: 60px 0 0 30px;">BOOK YOUR APPOINTMENT</div>
+        
+        </div>
+        </div>
+    </div>
